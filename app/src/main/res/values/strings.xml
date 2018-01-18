@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UserRetrofit</string>
+    <string name="title_enter_post">Crear usuario</string>
+    <string name="hint_id">_id</string>
+    <string name="hint_fn">first name</string>
+    <string name="hint_ln">last name</string>
+    <string name="hint_email">email</string>
+    <string name="action_submit">Crear usuario</string>
+</resources>
