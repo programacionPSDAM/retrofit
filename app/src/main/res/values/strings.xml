@@ -6,4 +6,6 @@
     <string name="hint_ln">last name</string>
     <string name="hint_email">email</string>
     <string name="action_submit">Crear usuario</string>
+    <string name="title_enter_get_eamil">Introduce email</string>
+    <string name="action_submit_get">Buscar usuario</string>
 </resources>

@@ -53,20 +53,20 @@ public class PostActivity extends AppCompatActivity {
                         && !TextUtils.isEmpty(email)) {
                     User user = new User (id, firstName, lastName, email);
                     Log.i("UI onClick", "user: " + user);
-                    sendPost(user);
+                    sendUser(user);
                 }
 
             }
         });
     }
 
-    private void sendPost(User user) {
+    private void sendUser(final User user) {
         mAPIService.savePost(user).enqueue(new Callback<User>() {
             @Override
             public void onResponse(Call<User> call, Response<User> response) {
                 if (response.isSuccessful()){
-                    Log.i("UI sendPost", "post submitted to API." + response.body().toString());
-                    showResponse(response.body().toString());
+                    Log.i("UI sendUser", "post submitted to API." + response.body().toString());
+                    showResponse(user);
                 }
 
             }
@@ -81,10 +81,10 @@ public class PostActivity extends AppCompatActivity {
         });
     }
 
-    private void showResponse(String s) {
+    private void showResponse(User user) {
         if(mResponseTv.getVisibility() == View.GONE) {
             mResponseTv.setVisibility(View.VISIBLE);
         }
-        mResponseTv.setText(s);
+        mResponseTv.setText(user.toString());
     }
 }
