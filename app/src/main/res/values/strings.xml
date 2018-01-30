@@ -8,4 +8,7 @@
     <string name="action_submit">Crear usuario</string>
     <string name="title_enter_get_eamil">Introduce email</string>
     <string name="action_submit_get">Buscar usuario</string>
+    <string name="title_app">Aplicación Retrofit</string>
+    <string name="action_submit_GET">Buscar usuario por email</string>
+    <string name="action_submit_POST">Crear usuario</string>
 </resources>
